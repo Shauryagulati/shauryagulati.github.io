@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Shaurya Gulati – Personal Website</title>
+    <meta
+      name="description"
+      content="My name is Shaurya Gulati, I’m a product-focused technologist and AI engineer. I’m passionate about building intelligent systems that combine data, design, and engineering — from generative AI to product thinking & human-centered design."
+    />
+
+    <link rel="icon" type="image/png" href="/icon/32x32.png" />
+
+
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/180x180.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-title"
+      content="Shaurya Gulati – Personal Website"
+    />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="theme-color" content="#f6d4b1" />
+
+    <meta property="og:title" content="Shaurya Gulati – Personal Website" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://shauryagulati.dev/" />
+    <meta property="og:image" content="https://shauryagulati.dev/icon/og-img1.png" />
+    <meta
+      name="og:description"
+      content="My name is Shaurya Gulati, I’m a machine learning engineer and AI product builder. I have a passion for all things technology and innovation, from generative AI & RAG systems to agentic workflows & real-world applications."
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+
+  <body>
+    <div id="home"></div>
+
+    <canvas class="webgl"></canvas>
+
+    <div id="hero-backup">
+      <h3>Hi there, I’m</h3>
+      <h1>Shaurya</h1>
+      <ul>
+        <li>AI Engineer</li>
+        <li>Data Scientist</li>
+      </ul>
+    </div>
+
+    <nav>
+      <div class="menu-btn">
+        <button class="btn" onclick="toggleMenu()">
+          <svg width="16" height="16">
+            <rect class="st0" width="16" height="3.2" />
+            <rect y="6.4" class="st0" width="16" height="3.2" />
+            <rect y="12.8" class="st0" width="16" height="3.2" />
+          </svg>
+        </button>
+        <div style="display: flex">
+          <a
+            class="btn"
+            href="https://www.linkedin.com/in/shauryagulati/"
+            target="_blank"
+          >
+            <svg width="16" height="16">
+              <path
+                d="M0.1,2c0-1,0.8-1.8,1.9-1.8c1,0,1.8,0.9,1.8,1.8c0,1-0.8,1.9-1.8,1.9C0.9,3.9,0.1,3.1,0.1,2z M0.1,5h3.7v9.8
+                H0.1V5z"
+              />
+              <path
+                d="M15.9,8.5v6.2h-3.5V9.4c0-0.9-0.6-1.6-1.5-1.6c-0.8,0-1.4,0.6-1.4,1.5v5.5H5.8V5h3.7v1
+                c0.6-0.7,1.6-1.2,2.8-1.2C14.4,4.7,15.9,6.3,15.9,8.5z"
+              />
+            </svg>
+          </a>
+          <a
+            class="btn"
+            href="https://twitter.com/shauryagulatii"
+            target="_blank"
+          >
+            <svg width="16" height="16">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+              />
+            </svg>
+          </a>
+          <a
+            class="btn"
+            href="https://github.com/Shauryagulati"
+            target="_blank"
+          >
+            <svg width="16" height="16">
+              <path
+                d="M10.6,12.9c0-1-0.3-1.6-0.7-2c2.4-0.3,4.9-1.1,4.9-5.2c0-1.1-0.4-2.1-1.1-2.9c0.1-0.3,0.5-1.3-0.1-2.8
+                c0,0-0.9-0.3-3,1.1c-1.7-0.5-3.6-0.5-5.4,0c-2-1.4-3-1.1-3-1.1C1.6,1.4,2,2.5,2.1,2.8C1.4,3.5,1,4.6,1,5.6c0,4.1,2.5,5,4.9,5.3
+                c-0.4,0.4-0.6,0.9-0.7,1.4c-0.6,0.3-2.2,0.7-3.1-0.9c0,0-0.6-1-1.6-1.1c0,0-1.1,0-0.1,0.7c0,0,0.7,0.3,1.1,1.6c0,0,0.6,2.1,3.6,1.5
+                c0,0.9,0,1.8,0,1.8h5.3C10.6,15.9,10.6,14.4,10.6,12.9z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="menu-body" onclick="closeMenu()">
+        <a href="#home" onclick="closeMenu()">Home</a>
+        <a href="#aboutMe" onclick="closeMenu()">About</a>
+        <a href="#education" onclick="closeMenu()">Education</a>
+        <a href="#experience" onclick="closeMenu()">Experience</a>
+        <a href="#projects" onclick="closeMenu()">Projects</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+      </div>
+
+      <div id="tip-scroll">Scroll &#8595;</div>
+    </nav>
+
+    <main>
+      <section>
+        <h1 id="aboutMe">Hi there</h1>
+        <p>
+          My name is Shaurya, I’m an AI product builder and data scientist, currently pursuing my Master’s at Carnegie Mellon University. 
+          I have a passion for building intelligent, useful systems, from generative AI tools and RAG pipelines to real-world agentic applications.
+        </p>
+
+        <p>
+          Outside of tech, I’m deeply curious about human behavior, storytelling, and systems thinking,
+          and I strive to create solutions that blend utility with user impact.
+        </p>
+
+        <p>
+          Below are a few projects I’ve built to learn, solve problems, and push boundaries,
+          both individually and with teams.
+        </p>
+      </section>
+
+      <section>
+        <h1 id="education">Education</h1>
+        <br />
+        <br />
+      
+        <h2>Carnegie Mellon University</h2>
+        <h3>Master of Information Systems Management</h3>
+        <p style="text-align: center;"><em>Business Intelligence and Data Analytics, 2024–2025</em></p>
+        <ul class="skills">
+          <li>AI Engineering</li>
+          <li>Machine Learning</li>
+          <li>Data Science</li>
+          <li>Product Design</li>
+          <li>Statistical Modeling</li>
+        </ul>
+      
+        <hr />
+      
+        <h2>Chandigarh University</h2>
+        <h3>Bachelor of Engineering – Computer Science</h3>
+        <p style="text-align: center;"><em>AI & ML Specialization, 2018–2022</em></p>
+        <ul class="skills">
+          <li>Data Structures & Algorithms</li>
+          <li>Software Engineering</li>
+          <li>Web Development</li>
+          <li>Python & SQL</li>
+        </ul>
+      </section>
+
+
+      <section id="experience">
+        <h1>Experience</h1>
+        <br />
+        <br />
+
+        <h2>Research Assistant – Carnegie Mellon University</h2>
+        <h3>May 2025 – Present</h3>
+        <ul class="skills">
+          <li>Retrieval-Augmented Generation (RAG)</li>
+          <li>AutoGen Framework</li>
+          <li>Vector Databases</li>
+          <li>Prompt Engineering</li>
+          <li>Python</li>
+        </ul>
+        <p>
+          Working under faculty guidance on building a multi-agent RAG system for navigating legal and policy documents. Responsible for implementing document chunking, embedding generation, vector storage, and conversational agent workflows using Microsoft AutoGen.
+        </p>
+      
+        <hr />
+
+        <h2>Computing Consultant – Carnegie Mellon University</h2>
+        <h3>August 2025 – Present</h3>
+        <h3>February 2025 – May 2025</h3>
+        <ul class="skills">
+          <li>Technical Troubleshooting</li>
+          <li>User Support</li>
+          <li>Computing Services</li>
+          <li>Team Collaboration</li>
+        </ul>
+        <p>
+          Assist with the implementation of AI-driven tools to improve efficiency and user experience.
+          Provide consulting and guidance on integrating AI solutions into computing workflows, ensuring alignment with student and faculty needs.
+          Collaborate with Heinz Computing staff to maintain and enhance computing services.
+        </p>
+      
+        <hr />
+
+        <h2>Data Analyst – Carnegie Mellon University</h2>
+        <h3>February 2025 – May 2025</h3>
+        <ul class="skills">
+          <li>Data Analysis</li>
+          <li>Data Scraping</li>
+          <li>Data Curation</li>
+          <li>Scripting</li>
+          <li>Python</li>
+        </ul>
+        <p>
+          Conducted exploratory and statistical analysis on faculty survey data to uncover patterns in course feedback, TA performance, 
+          and student experience.
+        </p>
+      
+        <hr />
+      
+        <h2>Software Engineer – YMGrad</h2>
+        <h3>2022 – 2024</h3>
+        <ul class="skills">
+          <li>SQL</li>
+          <li>Backend Development</li>
+          <li>Data Analysis</li>
+          <li>Data Modeling</li>
+          <li>Python</li>
+          <li>REST APIs</li>
+        </ul>
+        <p>
+          Contributed to the backend architecture of YMGrad, a platform supporting international students. Focused on optimizing database queries, managing large-scale user data, and ensuring secure API performance.
+        </p>
+      </section>
+
+
+      <section id="projects">
+        <h1 id="projects">Projects</h1>
+        <br />
+        <br />
+      
+        <!-- Project 1 -->
+        <h2>EU Navigator</h2><br/>
+        <h2>Multiagentic RAG Personal Learning Portal</h2>
+        <ul class="skills">
+          <li>LangChain</li>
+          <li>FAISS</li>
+          <li>Streamlit</li>
+          <li>Llama 3.1</li>
+          <li>BAAI/BGE-M3</li>
+          <li>RAGAS</li>
+          <li>AI</li>
+          <li>Legal Tech</li>
+        </ul>
+        <p>
+          EU Navigator is a sophisticated Multiagentic Retrieval-Augmented Generation (RAG)
+          system designed as a Personal Learning Portal for exploring European Union tech,
+          data, and AI legislation. The system integrates multiple specialized AI agents for
+          planning, retrieval, synthesis, and review—enabling evidence-based legal analysis
+          with verified citations.
+        </p>
+        <p>
+          Built using LangChain, FAISS, and Llama 3.1, it preserves EU legal structure
+          through section-based chunking and semantic search. A Streamlit-based learning
+          interface supports modular exploration, progress tracking, and reflection journaling.
+          Evaluation was performed with the RAGAS framework to measure answer faithfulness
+          and relevancy.
+        </p>
+        <p>
+          <a href="https://github.com/Shauryagulati/EU-Navigator/" target="_blank">
+            <u>View Project</u>
+          </a>
+        </p>
+        
+        <hr />
+      
+        <!-- Project 2 -->
+        <h2>UCI Air Quality Prediction with MLFlow</h2>
+        <ul class="skills">
+          <li>Python</li>
+          <li>MLFlow</li>
+          <li>XGBoost</li>
+          <li>Docker</li>
+          <li>Evidently AI</li>
+          <li>EDA</li>
+          <li>Model Monitoring</li>
+        </ul>
+        <p>
+          Developed a complete machine learning pipeline for predicting air quality using the
+          UCI dataset. The project included experiment tracking with MLFlow, real-time data
+          ingestion through Kafka, and a deployed prediction API containerized with Docker.
+        </p>
+        <p>
+          Built advanced monitoring dashboards with Evidently AI to detect data drift and
+          performance degradation. Focused on reproducibility, modular ML design, and
+          robust model serving for continuous deployment and evaluation.
+        </p>
+        <p>
+          <a href="https://github.com/Shauryagulati/" target="_blank">
+            <u>View Project</u>
+          </a>
+        </p>
+        
+        <hr />
+      
+        <!-- Project 3 -->
+        <h2>Question Answering System using BERT & Azure ML</h2>
+        <ul class="skills">
+          <li>Python</li>
+          <li>BERT</li>
+          <li>Azure ML</li>
+          <li>Hugging Face</li>
+          <li>Deep Learning</li>
+          <li>API Deployment</li>
+        </ul>
+        <p>
+          Built a fine-tuned BERT-based question-answering system capable of matching user
+          queries with relevant answer sentences from the SQuAD dataset. The system combined
+          semantic similarity scoring, sentence embeddings, and Jaccard/TF-IDF baselines
+          for benchmarking.
+        </p>
+        <p>
+          Deployed the model using Azure Machine Learning, optimizing the scoring pipeline
+          for latency and accuracy. This project demonstrated full-stack ML deployment,
+          including model fine-tuning, packaging, serving, and real-time inference.
+        </p>
+        <p>
+          <a href="https://github.com/Shauryagulati/" target="_blank">
+            <u>View Project</u>
+          </a>
+        </p>
+        
+        
+        <hr />
+      
+        <!-- Project 4 -->
+        <h2>Fairness Audit Playbook</h2><br/>
+        <h2>Responsible AI Evaluation Framework</h2>
+        <ul class="skills">
+          <li>AI Ethics</li>
+          <li>Fairness Metrics</li>
+          <li>Python</li>
+          <li>Data Science</li>
+          <li>Governance</li>
+          <li>ML Evaluation</li>
+        </ul>
+        <p>
+          Created a comprehensive Fairness Audit Playbook that standardizes fairness evaluation
+          for AI systems across domains. The framework integrates bias detection, intersectional
+          fairness analysis, and historical context assessment to promote responsible AI adoption.
+        </p>
+        <p>
+          The playbook includes fairness definition selection, bias source identification,
+          validation workflows, and implementation guidelines designed for engineering teams.
+          Presented with case studies and visualization modules for explainability.
+        </p>
+        <p>
+          <a href="https://github.com/Shauryagulati/" target="_blank">
+            <u>View Report</u>
+          </a>
+        </p>
+        <hr />
+
+        <p style="text-align: center">
+          <a href="https://github.com/Shauryagulati/" target="_blank">
+            <u>and more!</u>
+          </a>
+        </p>
+      </section>
+
+      
+      
+
+      <section>
+        <h1 id="contact">Contact</h1>
+        <p style="text-align: center">
+          Reach out on
+          <a href="https://www.linkedin.com/in/shauryagulati/"
+            ><u><b>LinkedIn</b></u>
+          </a>
+          <br />
+          or email me at
+          <a href="mailto:i.shauryagulati@gmail.com">
+            <u><b>i.shauryagulati@gmail.com</b></u>
+          </a>
+        </p>
+      </section>
+    </main>
+
+    <input type="text" id="textarea" readonly />
+    <div id="loading">
+      <h2>Booting...</h2>
+      <div id="loading-bar">
+        <div id="loading-bar-progress"></div>
+      </div>
+      <div id="loading-items">Starting...</div>
+    </div>
+    <footer>
+      <div>Designed by Ed. Modified by Shaurya.</div>
+      <div>Computer design based on the Commodore PET 8296.</div>
+      <div>
+        <em>
+          "This is about legacy — not noise."
+        </em>
+      </div>
+      <div>COPYRIGHT © 2025-2026 Shaurya Gulati.</div>
+    </footer>
+    <script>
+      function closeMenu() {
+        document.getElementsByTagName("nav")[0].classList.remove(["active"]);
+      }
+
+      function toggleMenu() {
+        const nav = document.getElementsByTagName("nav")[0];
+        if (nav.classList.contains("active")) {
+          nav.classList.remove(["active"]);
+        } else {
+          nav.classList.add("active");
+        }
+      }
+    </script>
+    <script
+      fetchpriority="high"
+      src="https://cdn-ts.netlify.app/webgl-helper@3.0.11/webgl-helper.min.js"
+    ></script>
+  </body>
+</html>
