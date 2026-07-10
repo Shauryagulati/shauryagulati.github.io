@@ -8,7 +8,7 @@ markdown renderer drawn onto the machine's CRT.
 
 **This site has been succeeded by v2** — a from-scratch rebuild with a
 floating terminal and a RAG agent living inside it:
-**[shauryagulati.me](https://shauryagulati.me)** ·
+**[shauryagulati.dev](https://shauryagulati.dev)** ·
 [source](https://github.com/Shauryagulati/portfolio-v2)
 
 ## Credit where it belongs
