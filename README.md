@@ -4,6 +4,8 @@ My first portfolio: a 3D Commodore on your screen with a working
 terminal inside it — a tiny UNIX shell, a virtual file system, and a
 markdown renderer drawn onto the machine's CRT.
 
+![v1 booting up, then the scroll ride through the machine](.github/v1-preview.gif)
+
 **This site has been succeeded by v2** — a from-scratch rebuild with a
 floating terminal and a RAG agent living inside it:
 **[shauryagulati.me](https://shauryagulati.me)** ·
