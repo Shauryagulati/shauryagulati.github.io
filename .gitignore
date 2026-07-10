@@ -25,5 +25,8 @@ yarn-debug.log*
 yarn-error.log*
 .eslintcache
 
-readme.md
 for_changes.md
+
+# private working artifacts
+.superpowers/
+docs/superpowers/specs/
